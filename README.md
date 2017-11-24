@@ -83,7 +83,7 @@ lein migratus up 20171124121048
 ```
 
 ### swagger.jsonの使用方法
-* [swagger editor](https://swagger.io/swagger-editor/)でswagger_ver1.jsonを開く。
+* [swagger editor](https://swagger.io/swagger-editor/)でswagger-spec-v1.jsonを開く。
 * スペックをUIで確認。
 * Swagger codegenでコード生成することも可能だが、必ずしもコードのクオリティが高くないので、見極めが必要。
 
