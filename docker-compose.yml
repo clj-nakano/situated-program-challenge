@@ -1,0 +1,15 @@
+version: "3"
+services:
+    postgres:
+      image: postgres:9.6
+      ports:
+        - "5432:5432"
+      volumes:
+        - pgdata:/var/lib/postgresql/data
+      environment:
+        POSTGRES_PASSWORD: "password123"
+        POSTGRES_USER: meetup
+        POSTGRES_DB: meetup
+
+volumes:
+    pgdata:

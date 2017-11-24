@@ -60,3 +60,32 @@ Rich HickeyのClojure/Conj2017キーノートの考察として、外界の変�
 * 自分の選択した言語に必要な開発環境は追記してください。
     * dockerを使う必要はありません。
 
+### Postgresqlサーバの起動
+
+```
+docker-compose up 
+```
+* Daemonとして走らせたい場合は `-d` オプションを追加。
+* 5432番ポートでソケットを開いているので、ホストOSのpsql、または他のSQLツールで接続可能。
+* 接続情報は `docker-compose.yml` を参照のこと。
+* Dockerからpsqlを利用することも可能。
+
+```
+docker run -it -e PGPASSWORD=password123 -v $PWD:/project postgres:9.6 psql -U meetup -h docker.for.mac.localhost meetup
+```
+
+### DBスキーマの設定
+
+* 仕様バージョン１のスキーマを設定するには、下記コマンドを実行。
+
+```
+lein migratus up 20171124121048
+```
+
+### swagger.jsonの使用方法
+* [swagger editor](https://swagger.io/swagger-editor/)でswagger_ver1.jsonを開く。
+* スペックをUIで確認。
+* Swagger codegenでコード生成することも可能だが、必ずしもコードのクオリティが高くないので、見極めが必要。
+
+
+
