@@ -79,7 +79,7 @@ docker run -it -e PGPASSWORD=password123 -v $PWD:/project postgres:9.6 psql -U m
 * 仕様バージョン１のスキーマを設定するには、下記コマンドを実行。
 
 ```
-lein migratus up 20171124121048
+lein migratus migrate
 ```
 
 ### swagger.jsonの使用方法
