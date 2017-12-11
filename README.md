@@ -1,3 +1,12 @@
+
+---
+
+**お知らせ**
+
+12/12開催のclj_nakano#2では仕様第一版とその実装を紹介し、仕様第二版はclj_nakano#3で扱いたいと考えております。
+
+---
+
 # situated-program-challenge
 Rich HickeyのClojure/Conj2017キーノートの考察として、外界の変化を言語ごとにどれだけ上手く扱えるか比較する
 
