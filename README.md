@@ -86,6 +86,7 @@ docker run -it -e PGPASSWORD=password123 -v $PWD:/project postgres:9.6 psql -U m
 ### DBスキーマの設定
 
 * 仕様バージョン１のスキーマを設定するには、下記コマンドを実行。
+* [migratusがJava9で動かないとの報告](https://github.com/yogthos/migratus/issues/126)があります。Java8で実行してください。(Thanks to @lagenorhynque) 
 
 ```
 lein migratus up 20171204200333
