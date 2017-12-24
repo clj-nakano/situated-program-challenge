@@ -4,8 +4,9 @@
   :url "https://github.com/clj-nakano/situated-program-challenge"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
+  :min-lein-version "2.8.1"
   :dependencies [[org.clojure/clojure       "1.8.0"]
-                 [migratus                  "1.0.1"]
+                 [migratus                  "1.0.3"]
                  [com.fzakaria/slf4j-timbre "0.3.2"]
                  [com.taoensso/timbre       "4.10.0"]
                  [org.postgresql/postgresql "9.4-1206-jdbc42"]]
@@ -14,4 +15,4 @@
              :init-script   "init.sql"
              :db "postgres://meetup:password123@localhost:5432/meetup"}
   :profiles {:dev {:source-paths ["dev"]
-                   :plugins [[migratus-lein "0.5.3"]]}})
+                   :plugins [[migratus-lein "0.5.4"]]}})
