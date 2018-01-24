@@ -104,7 +104,7 @@ lein migratus up 20171204200333
 ```
 * 仕様バージョン2のスキーマにアップグレードするには、下記コマンドを実行。
 ```
-lein migratus up 20180115065446
+lein migratus migrate
 ```
 
 ### swagger.jsonの使用方法
